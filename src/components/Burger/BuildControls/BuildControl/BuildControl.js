@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './BuildControl.css';
+import classes from './BuildControl.css'
 
 const buildControl = (props) => (
     <div className="BuildControl">
-        <div className={"Label"}>{props.label}</div>
+        <div className={classes.Label}>{props.label}</div>
         <button 
             className="Less" 
             onClick={props.removed} 
