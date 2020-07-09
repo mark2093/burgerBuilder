@@ -5,16 +5,16 @@ import './CheckoutSummary.css'
 const checkoutSummary = (props) => {
     return (
         <div className="CheckoutSummary">
-            <h1> Hot It taste well</h1>
+            <h1> Hope It taste well</h1>
             <div style={{ width: '100%',  margin: 'auto' }}>
                 <Burger ingredients={props.ingredients} />
             </div>
             <Button
                 btnType="Danger"
-                clicked={props.onCheckoutCancelled}>CANCEL</Button>
+                clicked={props.checkoutCancelled}>CANCEL</Button>
             <Button
                 btnType="Success"
-                clicked={props.onCheckoutContinue}>CONTINUE</Button>
+                clicked={props.checkoutContinued}>CONTINUE</Button>
         </div>
     )
 
